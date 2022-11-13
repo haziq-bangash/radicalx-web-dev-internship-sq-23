@@ -1,0 +1,8 @@
+export { default as Category } from './Category'
+export { default as Description } from './Description'
+export { default as IntroVideo } from './Intro_Video'
+export { default as Location } from './Location'
+export { default as MentorDetails } from './Mentor_Details'
+export { default as RecommendedRoles } from './Recommended_Roles'
+export { default as Resources } from './Resources'
+export { default as Benefits } from './Benefits'
