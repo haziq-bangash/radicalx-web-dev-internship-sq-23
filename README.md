@@ -7,3 +7,7 @@
 ##Frontend-Project-2
 
 [Link to deployed project](https://radicalx-web-dev-internship-sq-23-project-2.vercel.app/)
+
+##Frontend-Project-3
+
+[Link to deployed project](https://radicalx-web-dev-internship-sq-23-project-3.vercel.app/)
