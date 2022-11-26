@@ -3,18 +3,20 @@ import styled from "styled-components";
 
 const Resources = () => {
   const urlRef = useRef(null);
-  const urlItemRef = useRef(null);
+  const urlErrorRef = useRef(null);
   const [urls, setUrls] = useState([]);
 
   // add new urls from input to urls hook
   const addNewUrl = () => {
     let url = urlRef.current.value;
-    if(url == ''){
+    if(url === ''  || urls.includes(url)){
       urlRef.current.focus();
+      urlErrorRef.current.innerHTML = "Either you entered nothing or URL already exist in your collection";
     }
     else{
       setUrls(oldUrls => [...oldUrls, url]);
       refresh(urls);
+      urlErrorRef.current.innerHTML = "URL added to collection";
       // console.log(urls);
     }
   }
@@ -33,6 +35,7 @@ const Resources = () => {
       ...urls.slice(0, key),
       ...urls.slice(key + 1)
     ]);
+    urlErrorRef.current.innerHTML = '';
     refresh(urls);
     // console.log(urls);
   }
@@ -63,6 +66,7 @@ const Resources = () => {
             placeholder="Add URLs"
             ref={urlRef}
           />
+          <Error className="" ref={urlErrorRef} ></Error>
         </div>
         <div className="col-2" >
           <Button type="button" className="btn btn-sm" onClick={addNewUrl} >Add</Button>
@@ -143,3 +147,7 @@ const Item = styled.li`
     }
   }
 `;
+
+const Error = styled.p`
+color: #793ef5;
+`
