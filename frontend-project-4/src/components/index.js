@@ -1,3 +1,6 @@
-export { default as Topbar } from './topbar/topbar'
-export { default as Flow } from './flow/flow'
-export { default as Modules } from './modules/modules'
+export { default as Sidebar } from './sidebar/sidebar';
+export { default as Internships } from './internships/internships';
+export { default as Dashboard } from './dashboard/dashboard';
+export { default as Apprentices } from './apprentices/apprentices';
+export { default as Jobs } from './jobs/jobs';
+export { default as Settings } from './settings/settings';
