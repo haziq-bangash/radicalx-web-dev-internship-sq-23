@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+  font-family: "Anurati";
+  src: local("Anurati"),
+   url("./fonts/Anurati-Regular.otf") format("truetype");
+  font-weight: bold;
+}
+
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-face-gm {
+  font-family: "Anurati";
+ }
+
+body {
+  background-color: #d3d3d3;
+}
+
+Link {
+  text-decoration: none;
+}
